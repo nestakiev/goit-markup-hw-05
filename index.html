@@ -50,7 +50,7 @@
         <!-- Герой -->
         <section class="hero">
             <h1 class="hero-title">Эффективные решения <br />для вашего бизнеса</h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+            <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </section>
 
         <!-- Особенности -->
@@ -86,12 +86,18 @@
             <div class="container">
             <h2 class="work-title">Чем мы занимаемся</h2>
             <ul class="list-item">
-                <li> <img class="imgblock" src="./images/photo1.jpg" width="370" alt="Человек работает за клавиутурой перед экраном планшета
-" /> </li>
-                <li> <img class="imgblock" src="./images/photo2.jpg" width="370" alt="Человек держит в руке телефон перед рабочим местом с планшетом и комп'ютером
-" /> </li>
-                <li> <img class="imgblock" src="./images/photo3.jpg" width="370" alt="Человек держит в руках планшет, на экране планшета выведена цветовая палитка
-" /> </li>
+                <li class="item"> 
+                    <img class="imgblock" src="./images/photo1.jpg" width="370" alt="Человек работает за клавиутурой перед экраном планшета" /> 
+                <h3 class="description">Десктопные приложения</h3>
+                </li>
+                <li class="item">
+                    <img class="imgblock" src="./images/photo2.jpg" width="370" alt="Человек держит в руке телефон перед рабочим местом с планшетом и комп'ютером"/> 
+                <h3 class="description">Мобильные приложения</h3>
+                </li>
+                <li class="item"> 
+                    <img class="imgblock" src="./images/photo3.jpg" width="370" alt="Человек держит в руках планшет, на экране планшета выведена цветовая палитка"/> 
+                <h3 class="description">Дизайнерские решения</h3>
+                </li>
             </ul>
         </div>
         </section>
@@ -260,6 +266,14 @@
             </ul>
             </div>
         </section>
+        <!-- Бекдроп + модальное окно -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="exit-modal-btn" data-modal-close> &#10060;
+                </button>
+            </div>
+        </div>
+
     </main>
 
     <footer class="footer">
@@ -300,6 +314,8 @@
             </div>
         </div>
     </footer>
+    
+    <script src="./js/modal.js"></script>
 
 </body>
 
